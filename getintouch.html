@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>    
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">
+          <img src="image.png">
+        </a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <li><a href="wnpc1.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="teams.html">Team</a></li>
+        <li><a href="getintouch.html">Register</a></li>
+        <li><a href="contactform.html"">Contact</a></li>
+
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav> 
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="contents">
+      <form action="getintouch1.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="user-details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required name="Fullname" id="name">
+          </div>
+          <div class="input-box">
+            <span class="user-details">Email</span>
+            <input type="text" placeholder="Enter your email" required name="emailid" id="email">
+          </div>
+          <div class="input-box">
+            <span class="user-details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required name="Phone" id="phone">
+          </div>
+          <div class="input-box">
+            <span class="user-details">Branch</span>
+            <select name="branch">
+              <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="csbs">CSBS</option>
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="ec">EC</option>
+            <option value="ex">EX</option>
+            <option value="civil">CIVIL</option>
+            <option value="mechanical">MECHANICAL</option>
+            <option value="pct">PETROCHEMICAL</option>
+    <option value="other">OTHER</option>
+        </select>
+          </div>
+          <div class="input-box">
+            <span class="user-details">Programme Applying For</span>
+      <select name="programme" id="">
+        <option value="none" selected disabled hidden>Select an Option</option>
+          <option value="web-development">WEB DEVELOPMENT</option>
+          <option value="core-coding">CORE CODING</option>
+          <option value="content">CONTENT WRITING</option>
+          <option value="content">MARKETING AND SALES</option>
+          <option value="content">GRAPHIC DESIGNING</option>
+      </select>
+          </div>
+        </div>
+        <div class="gender-user-details">
+          <input type="radio" name="gender" id="dot-1" value="Male">
+          <input type="radio" name="gender" id="dot-2" value="Female">
+          <input type="radio" name="gender" id="dot-3" value="Other">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" name="register" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="footer-contact">
+<h2 style="color:rgb(38, 170, 185) ;">Contact Us</h2>
+<div class="footer-contact1">
+WNPC-SOIT,RGPV,GANDHI NAGAR,BHOPAL(M.P)
+</div>
+<div>
+<div style="font-weight:bold;">Phone:
+<span style="font-weight:300">9302931857</span>
+</div>
+</div>
+<div>
+<div style="font-weight: bold;">Email:
+<span style="font-weight:300;">support@wnpcsoit.com</span>
+</div>
+
+</div>
+    </div>
+    <div class="copyright" style="color:aqua">
+     Copyright &#169 2022 WNPC-SOIT,RGPV. All Rights Reserved
+    </div>
+    <div class="social-icon">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+  </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+  
+  <script> 
+    $("#submit") .click(function(){
+    var name = $("#name") .val();
+    var email = $("#email") .val();
+    var phone = $("#phone").val();
+    if(name === '' || email == ''|| phone == ''){
+    swal({
+      title: "Failed!",
+      text: "Please fill the empty space!",
+      icon: "warning",
+      button: "Opps!",
+    });
+    
+    }
+    else{
+        swal({
+      title: "Success!",
+      text: "Good Job!",
+      icon: "success",
+      button: "Aww yes!",
+    });
+      
+    }})
+      </script>
+    
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = () => {
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+</html>

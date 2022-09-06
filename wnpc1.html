@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WNPC SOIT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="wnpc1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">
+          <img src="image.png">
+        </a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <li><a href="wnpc1.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="teams.html">Team</a></li>
+        <li><a href="getintouch.html">Register</a></li>
+        <li><a href="contactform.html">Contact</a></li>
+
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <svg viewBox="0 0 1500 400" id="wnpc">
+    <text x="2.5%" y="50%">
+      WEB AND PROGRAMMING CLUB
+    </text>
+  </svg>
+  <div class="about">
+    <div class="main-header">
+      <span class="b">
+
+   
+        From
+        <span id="clg-name"></span>
+      </span>
+      <div class="get-in-touch">
+        <button>
+          <a href="getintouch.html" style="text-decoration: none; color: white;">Get In Touch</a>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="we-are">
+      <div class="flex-weare"> <img src="weare.png" id="imgweare">
+        <div> Who We Are?</div>
+      </div>
+
+      <p id="contents">
+        WNPC,SOIT RGPV is an organisation that believes Web,programming and Technology is important for our country's
+        development.It is established with the purpose of developing the promoting a culture of coding in our
+        suurrounnding. The team here works to encourage students to embrace the idea of starting their adventure in
+        programming field.We guide young coders in their journey for from campus to incubators and support them .
+      </p>
+    </div>
+    <div class="flex-prog">
+      <div class="prog">
+        <img src="setting.png" class="img">
+        <div>Our Programmes</div>
+      </div>
+      <div class="inner-text1">
+        <div class="card1">
+          <h3>Web Development</h3>
+          <p>
+            Students who are interested in Web Development can join us.
+            We are pleased to welcome them.
+          </p>
+        </div>
+        <div class="card2">
+          <h3>Core Coding</h3>
+          <p>Core Coding and DSA is very important for placements.Those who want to join and upgrade their skills can
+            join.
+
+          </p>
+
+        </div>
+        <div class="card3">
+          <h3>Content Writing</h3>
+          <p>Again Content Writing is best for enhancing our creativity and thoughts.Come here and upgrade.
+
+          </p>
+        </div>
+      </div>
+      <div class="inner-text2">
+        <div class="card4 ">
+          <h3>Digital Marketing</h3>
+          <p>
+
+          </p>
+        </div>
+        <div class="card5 ">
+          <h3>Graphic Designing</h3>
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="ring-head">
+
+      <div class="head2">
+        <svg viewBox="0 0 1500 300" id="ready">
+          <text x="25%" y="70%">
+            READY TO ADVENTURE
+          </text>
+        </svg>
+        <div class="adventure-inner">
+          <span id="span1">
+            1. Join WNPC, Code efficiently
+          </span>
+          <span id="span2">
+            2. We provide mentorship
+          </span>
+          <span id="span3">
+            3. Talk about start-ups and start your own start-ups.
+          </span>
+          <span id="span4">
+            4. Grow in your respective field.
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer id="footer">
+      <div class="footer-contact">
+<h2 style="color:rgb(38, 170, 185) ;">Contact Us</h2>
+<div class="footer-contact1">
+  WNPC-SOIT,RGPV,GANDHI NAGAR,BHOPAL(M.P)
+</div>
+<div>
+  <div style="font-weight:bold;">Phone:
+  <span style="font-weight:300">9302931857</span>
+  </div>
+</div>
+<div>
+  <div style="font-weight: bold;">Email:
+  <span style="font-weight:300;">support@wnpcsoit.com</span>
+  </div>
+  
+</div>
+      </div>
+      <div class="copyright" style="color:aqua">
+       Copyright &#169 2022 WNPC-SOIT,RGPV. All Rights Reserved
+      </div>
+      <div class="social-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-github"></i>
+    </div>
+    </footer>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<script>
+  var typed = new Typed('#clg-name', {
+    strings: [
+      "School Of Information Technology",
+      "Rajiv Gandhi Technological University",
+      "Bhopal(MP)",
+
+    ],
+    showCursor: true,
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+  });
+
+</script>
+
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = () => {
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var positiontop = $(document).scrollTop();
+      console.log(positiontop);
+
+      if ((positiontop > 400) && (positiontop < 1080)) {
+        $('.card1').addClass(' animated bounceInLeft');
+        $('.card2').addClass(' animated zoomInDown');
+        $('.card3').addClass(' animated flipInX');
+        $('.card4').addClass(' animated heartBeat');
+        $('.card5').addClass(' animated rotateInUpRight');
+      }
+    });
+  });
+
+</script>
+
+<script>
+  anime({
+    target: '#wnpc',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutQuad',
+    duration: 2000,
+    direction: 'alternate',
+    loop: true
+  });
+</script>
+</body>
+
+</html>
